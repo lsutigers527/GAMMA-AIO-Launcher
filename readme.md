@@ -60,9 +60,9 @@ On first launch, the program will prompt you to select the paths to the required
 - If you want to reset all paths, use the "Clear Config" button in the launcher.
 - The launcher uses Tkinter for its interface. If you get errors about missing `tkinter`, install it via your Python package manager.
 
-## Mod File
+## Download
 
-(Attach the `GAMMA_AIO_Launcher.zip` or executable file here. Make sure it is tested and functional before posting.)
+You can find the source code and latest updates on the [GitHub repository](https://github.com/lsutigers527/GAMMA-AIO-Launcher).
 
 ## Changelog
 
