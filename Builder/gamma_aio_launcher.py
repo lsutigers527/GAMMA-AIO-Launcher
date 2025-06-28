@@ -155,7 +155,7 @@ def run_gui(cfg):
             ("gamma_mo2", "GAMMA MO2"),
             ("talker", "Talker"),
             ("voicepet", "VoicePet"),
-            ("crcr", "PySAIC"),
+            ("crcr", "CRCR / PySAIC"),
         ]
     ):
         ttk.Label(left_frame, text=label_text + ":").grid(
@@ -170,7 +170,9 @@ def run_gui(cfg):
         )
         labels[key].grid(row=i, column=1, sticky="w", pady=6)
         ttk.Button(
-            left_frame, text="Browse", command=lambda k=key: update_cfg_and_save(k)
+            left_frame,
+            text="Browse",
+            command=lambda k=key: update_cfg_and_save(k),
         ).grid(row=i, column=2, padx=(8, 0), pady=6)
 
     # Individual launch buttons in right_frame
@@ -197,7 +199,7 @@ def run_gui(cfg):
     ).grid(row=3, column=0, pady=6, sticky="ew")
     ttk.Button(
         right_frame,
-        text="Launch PySAIC",
+        text="Launch CRCR / PySAIC",
         width=20,
         command=lambda: launch_exe(cfg.get("crcr"), new_console=True, set_cwd=True),
     ).grid(row=4, column=0, pady=6, sticky="ew")
